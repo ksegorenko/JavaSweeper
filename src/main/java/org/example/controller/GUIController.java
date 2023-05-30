@@ -10,13 +10,11 @@ public class GUIController {
     }
 
     public void pressLeftButton(Coord coord) {
-        if (game.gameOver()) return;
         game.openBox(coord);
         game.checkWinner();
     }
 
     public void pressRightButton(Coord coord) {
-        if (game.gameOver()) return;
         game.upperField.toggleFlagedToBox(coord);
     }
 }
